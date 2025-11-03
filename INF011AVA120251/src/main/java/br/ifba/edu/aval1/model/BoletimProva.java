@@ -1,8 +1,6 @@
-package org.example.model;
+package br.ifba.edu.aval1.model;
 
 import java.time.Duration;
-
-import br.ifba.edu.aval1.prototype.ListaPassagens;
 
 public class BoletimProva {
 
@@ -26,9 +24,4 @@ public class BoletimProva {
     public String toString() {
         return "BoletimProva [cboNumero=" + cboNumero + ", passagens=" + passagens + "]";
     }
-
-
-
-
-
 }

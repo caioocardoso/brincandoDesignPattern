@@ -1,4 +1,5 @@
 package br.ifba.edu.aval1.model;
 
-public class Prisma {
+public record Prisma(Integer numero, PontoGeografico ponto) {
+
 }
