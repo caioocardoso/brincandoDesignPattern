@@ -2,7 +2,7 @@ package br.ifba.edu.aval1.model;
 
 import java.time.Duration;
 
-public class BoletimProva {
+public class BoletimProva implements Cloneable{
 
     public String cboNumero;
     public ListaPassagens passagens;
@@ -19,9 +19,13 @@ public class BoletimProva {
         this.passagens.registrarPassagem(prismaID, tempo);
     }
 
-
     @Override
     public String toString() {
         return "BoletimProva [cboNumero=" + cboNumero + ", passagens=" + passagens + "]";
+    }
+
+    @Override
+    public BoletimProva clone(){
+        return new BoletimProva(this.cboNumero, this. passagens);
     }
 }

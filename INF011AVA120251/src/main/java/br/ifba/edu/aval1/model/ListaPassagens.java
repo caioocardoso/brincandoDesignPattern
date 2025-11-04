@@ -4,7 +4,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListaPassagens {
+public class ListaPassagens implements Cloneable{
 
     private List<TempoPassagem> tempos;
 
@@ -28,6 +28,11 @@ public class ListaPassagens {
         for(TempoPassagem tempoPassagem : this.tempos)
             if(tempoPassagem.prisma().numero() == numeroPrima)
                 tempoPassagem.setTempo(tempo);
+    }
+
+    @Override
+    public ListaPassagens clone(){
+        return new ListaPassagens(this);
     }
 
     @Override
