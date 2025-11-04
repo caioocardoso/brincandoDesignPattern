@@ -1,21 +1,22 @@
 package org.example.model;
 
 import org.example.Clonable;
+import org.example.Shapes.Shape;
 
-public class Car implements Clonable {
+public class Rectangle implements Shape {
     private String model;
     private int year;
 
-    public Car(){}
+    public Rectangle(){}
 
-    public Car(Car car){
-        this.model = car.model;
-        this.year = car.year;
+    public Rectangle(org.example.model.Rectangle rectangle){
+        this.model = rectangle.model;
+        this.year = rectangle.year;
     }
 
     @Override
     public Clonable clone() {
-        return new Car(this);
+        return new org.example.model.Rectangle(this);
     }
 
     public String getModel() {

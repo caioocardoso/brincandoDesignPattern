@@ -4,7 +4,7 @@ import br.ifba.edu.aval1.model.*;
 
 import java.util.List;
 
-public class MapaBuilder implements Builder {
+public class MapaBuilder extends Builder {
     Sexo sexo;
     Idade idade;
     Dificuldade dificuldade;
@@ -30,16 +30,6 @@ public class MapaBuilder implements Builder {
     @Override
     public Builder setDificuldade(Dificuldade dificuldade) {
         this.dificuldade = dificuldade;
-        return this;
-    }
-
-    @Override
-    public Builder setDistancia(Double valor) {
-        return this;
-    }
-
-    @Override
-    public Builder setDesnivel(Double valor) {
         return this;
     }
 
@@ -76,11 +66,6 @@ public class MapaBuilder implements Builder {
     @Override
     public Builder setChegada(PontoGeografico pontoGeografico) {
         this.chegada = pontoGeografico;
-        return this;
-    }
-
-    @Override
-    public Builder setListaPassagens(List<TempoPassagem> tempos) {
         return this;
     }
 

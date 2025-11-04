@@ -4,7 +4,7 @@ import br.ifba.edu.aval1.model.*;
 
 import java.util.List;
 
-public class SinaleticaBuilder implements Builder {
+public class SinaleticaBuilder extends Builder {
     Sexo sexo;
     Idade idade;
     Dificuldade dificuldade;
@@ -38,48 +38,6 @@ public class SinaleticaBuilder implements Builder {
     @Override
     public Builder setDesnivel(Double valor) {
         this.desnivel = valor;
-        return this;
-    }
-
-    @Override
-    public Builder setEscala(Integer valor) {
-
-        return this;
-    }
-
-    @Override
-    public Builder setEqn(Integer valor) {
-
-        return this;
-    }
-
-    @Override
-    public Builder setLargada(PontoGeografico pontoGeografico) {
-
-        return this;
-    }
-
-    @Override
-    public Builder setPartida(PontoGeografico pontoGeografico) {
-
-        return this;
-    }
-
-    @Override
-    public Builder setPrismas(List<Prisma> prismas) {
-
-        return this;
-    }
-
-    @Override
-    public Builder setChegada(PontoGeografico pontoGeografico) {
-
-        return this;
-    }
-
-    @Override
-    public Builder setListaPassagens(List<TempoPassagem> tempos) {
-
         return this;
     }
 

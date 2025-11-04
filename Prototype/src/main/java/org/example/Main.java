@@ -1,15 +1,13 @@
 package org.example;
 
-import org.example.model.Car;
-
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
-        car.setModel("Carrasso");
-        car.setYear(1900);
+        org.example.model.Rectangle rectangle = new org.example.model.Rectangle();
+        rectangle.setModel("Carrasso");
+        rectangle.setYear(1900);
 
-        Car car2 = (Car) car.clone();
+        org.example.model.Rectangle rectangle2 = (org.example.model.Rectangle) rectangle.clone();
 
-        System.out.println(car2.getModel() + car2.getYear());
+        System.out.println(rectangle2.getModel() + rectangle2.getYear());
     }
 }
